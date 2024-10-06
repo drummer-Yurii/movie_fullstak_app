@@ -18,5 +18,7 @@ mongoose
   .then(() => console.log('Connected to database!'))
   .catch((err) => console.log(err));
 
+// Routes prefix
+app.use('/api/post', require('./routes/routes'));
 // Start the server
 app.listen(port, () => console.log(`Server running at http://localhost:${port}`));
