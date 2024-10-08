@@ -10,7 +10,7 @@
       <v-divider></v-divider>
       <v-list density="compact">
         <v-list-item-group>
-          <v-list-item v-for="(item, i) in items" :key="i" :value="item">
+          <v-list-item v-for="(item, i) in items" :key="i" :value="item" :to="item.link" link>
             <v-list-item-icon>
               <v-icon :icon="item.icon"></v-icon>
             </v-list-item-icon>

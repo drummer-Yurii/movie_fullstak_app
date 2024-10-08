@@ -1,13 +1,7 @@
-<template>
-  <div>Home</div>
-</template>
+<script setup>
 
-<script>
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'HomeView',
-
-  components: {},
-});
 </script>
+
+<template>
+  <h1>Home Page</h1>
+</template>
