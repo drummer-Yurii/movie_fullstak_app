@@ -24,7 +24,12 @@ onMounted(async () => {
                 <v-btn small variant="outlined" color="primary">{{ post.category }}</v-btn>
               </v-col>
               <v-col sm="10" class="d-flex justify-end">
-                <v-btn variant="tonal" color="success">Edit</v-btn>
+                <v-btn
+                  variant="tonal"
+                  color="success"
+                  :to="{ name: 'edit-post', params: { id: post._id } }"
+                  >Edit</v-btn
+                >
                 <v-btn variant="tonal" color="red">Delete</v-btn>
               </v-col>
             </v-row>
